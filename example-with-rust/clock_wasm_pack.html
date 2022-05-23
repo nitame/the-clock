@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+<span id="container"></span>
+<script type="module">
+    import init, {print_clock} from "./pkg/example_with_rust.js";
+    init().then(() => {
+        print_clock(25, 72);
+        print_clock(12, -145);
+    });
+</script>
+</body>
+
+</html>

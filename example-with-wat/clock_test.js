@@ -5,7 +5,7 @@ fetch('./clock.wasm').then(response =>
     instance = results.instance;
     console.log("instance", instance);
 
-    console.log("Test positive values")
+    console.log("Test positive values");
     var hoursTestOne = 25;
     var minutesTestOne = 72;
     instance.exports.clock(hoursTestOne, minutesTestOne);
@@ -14,7 +14,7 @@ fetch('./clock.wasm').then(response =>
     console.log(hoursTestOne + " hours and " + minutesTestOne + " minutes");
     console.log("gives " + formatClock(clockHoursTestOne, clockMinutesTestOne));
 
-    console.log("Test negative minutes values")
+    console.log("Test negative minutes values");
     var hoursTestTwo = 12;
     var minutesTestTwo = -145;
     instance.exports.clock(hoursTestTwo, minutesTestTwo);
